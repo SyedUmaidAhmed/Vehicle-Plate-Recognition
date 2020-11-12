@@ -1,0 +1,10 @@
+alpr C:\Work_CV\Office_Codes\spectrum\corolla.jpg --c pk -n 1
+
+
+
+USING YOLOV4 in detect:
+
+python detect.py --weights ./checkpoints/yolov4-tiny-608 --size 608 --model yolov4 --images ./data/images/corolla.jpg --tiny
+
+
+python detect_video.py --weights ./checkpoints/yolov4-tiny-608 --size 608 --model yolov4 --video ./data/video/perfume_six.mp4 --output ./detections/results.avi
